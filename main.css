@@ -1,0 +1,28 @@
+body { font-family: Helvetica; }
+input, textarea { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #CCC; color: #333; font-size: 1.4em; background: #f9f9f9; background: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, white), color-stop(0.76, #f9f9f9)); background: -moz-linear-gradient(-90deg, white, white); padding: 10px; margin: 10px; }
+#expression_label { color: #888; position: absolute; z-index: 2; top: 27px; left: 22px; }
+#test_string_label { color: #888; position: absolute; z-index: 2; top: 27px; left: 25px; }
+#options_label { color: #888; position: absolute; z-index: 2; top: 27px; left: 770px; }
+#matches_label { font-size: 0.8em; color: #888; }
+#wrap { margin-left: auto; margin-right: auto; }
+#header { margin-left: auto; margin-right: auto; width: 900px; margin-bottom: 20px; }
+  #header h1 { text-shadow: 5px 5px 10px #CCC; color: #333; font-weight: bolder; font-size: 3em; display: inline; }
+  #header h2 { text-shadow: 5px 5px 10px #CCC; color: #333; font-weight: bolder; font-size: 1em; display: inline; margin-left: 10px; }
+#main { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #CCC; -webkit-box-shadow: 2px 2px 10px #CCC; -moz-box-shadow: 2px 2px 10px #CCC; margin-left: auto; margin-right: auto; width: 900px; padding: 10px; }
+  #main form { position: relative; }
+  #main form .field_wrap { position: relative; }
+  #main textarea { font-family: Helvetica; width: 875px; height: 100px; }
+  #matches { font-family: inherit; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #CCC; color: #333; font-size: 1.4em; background: #f9f9f9; background: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, white), color-stop(0.76, #f9f9f9)); background: -moz-linear-gradient(-90deg, white, white); padding: 10px; margin: 10px; min-height: 100px; max-height: 300px; width: 855px; overflow: scroll; }
+  #matches span { padding: 2px; }
+  #matches .match { background-color: #FF0; }
+  #matches .error { background-color: red; color: white; }
+  #expression { width: 725px; }
+  #options { width: 120px; }
+  #options_help { list-style: none; padding: 0px; margin: 0px; position: absolute; left: 465px; top: 60px; margin-bottom: -30px; opacity: 0; }
+  #options_help li { color: #333; font-size: 0.8em; display: inline; padding-right: 10px; }
+#reference { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #CCC; -webkit-box-shadow: 2px 2px 10px #CCC; -moz-box-shadow: 2px 2px 10px #CCC; margin-left: auto; margin-right: auto; margin-top: 20px; width: 900px; padding: 10px; clear: both; }
+  #reference h2 { color: #333; font-weight: bolder; text-shadow: 5px 5px 10px #CCC; }
+  #reference table { font-size: 0.9em; }
+  #reference table.right { float: right; padding-left: 30px; border-left: 1px solid #CCC; }
+.code { font-family: Courier; font-weight: bold; }
+

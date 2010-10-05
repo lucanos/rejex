@@ -1,36 +1,35 @@
-PatternMatcher = function (options) {
-  this.regExpOptions = options.regExpOptions || ""
+PatternMatcher = function( options ){
+  this.regExpOptions = options.regExpOptions || "";
   this.pattern = options.pattern || "";
   this.testString = options.testString || "";
-  if (this.pattern) {
-    this.buildRegExp(this.pattern, this.regExpOptions)
-  };
+  if( this.pattern )
+    this.buildRegExp( this.pattern , this.regExpOptions );
   this.matchClass = options.matchClass || 'match';
 }
 
 PatternMatcher.prototype = {
-  buildRegExp: function (pattern, opts) {
+
+  buildRegExp: function( pattern , opts ){
     try {
-      this.regExp = new RegExp (pattern, opts);
+      this.regExp = new RegExp( pattern , opts );
       this.valid = true;
     }
-    catch (e) {
+    catch( e ){
       this.valid = false;
       this.regExp = null;
     }
-  },
+  } ,
 
   highlight: function () {
-    if (this.valid) {
-      if (this.regExp.test(this.testString)) {
-        return this.testString.replace(this.regExp, function (match) {
+    if( this.valid ){
+      if( this.regExp.test( this.testString ) ){
+        return this.testString.replace( this.regExp , function( match ){
           return "<span class='match'>" + match + "</span>";
-        });
+        } );
       } else {
         return "No Match";
-      };      
-    } else {
-      return "<span class='error'>Invalid regular expression</span>";
-    };
+      }    
+    }
+    return "<span class='error'>Invalid regular expression</span>";
   }
 }
